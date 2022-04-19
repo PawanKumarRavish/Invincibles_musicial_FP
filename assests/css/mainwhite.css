@@ -1,0 +1,191 @@
+*{
+    margin:0px;padding:0px; 
+}
+html,body{
+    width:100%; height: 1000px;color:white;
+}
+header{
+    width:100%; background-color:rgb(88, 17, 91); height:10%;display: flex;
+}
+.logobox{
+    width:25%;
+    height: 100%; padding-left:5%;;overflow: hidden;
+}
+.logo{
+    height:100%;
+}
+.titlebox{
+    width:65%;padding-right:5%;height: 100%;text-align: center;
+}
+.titlebox{
+    line-height: 3em;
+}
+nav{
+    width:90%; height:5%; padding:0px 5%; background-color: #2e1835;clear:both; text-align: justify;
+}
+.musicindex{
+    width:90%; height:75%;padding:0px 5%; background-image: url('../images/indexbg2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} 
+aside{
+    width:20%;padding:5%; height:90%; 
+} 
+main{
+    width:70%;  background-color: rgba(0,0,0,0.9);
+    height: 100%;
+}
+audio{background-color: white;}
+.innerbox{
+    width:80%; margin:auto;height:90%;
+    padding:5% 0px;
+}
+.lines{
+    font-size:1.1em;
+}
+.sidelinks{
+    width: 100%; height:50%; list-style: none;
+} 
+.sidelinks li{
+    width:100%; margin:5px 0px; height:10%; text-align: center;background-color: rgba(70, 32, 53,0.7); 
+    border-radius: 20px;
+}
+.sidelinks li a{
+    color:white; font-size:1.3em;text-decoration: none;
+}
+footer{
+    width:90%; height:10%;padding:0px 5%; background-color: #311327;
+    text-align: center;
+    font-size:1.2em;
+}
+#nav_menu { display: block; }
+/* display the mobile menu */
+#mobile_menu { display: none; }
+#nav_menu ul{
+    display: flex;
+    list-style: none;
+}
+.fa{
+    color:white;
+}
+.fa-window-close{ color:#c73697}
+#nav_menu ul { width: 100%;height: 100%; }
+#nav_menu ul li { width: 20%;height: 90%;padding:1% 0px} 
+#nav_menu ul li:hover ul { width: 100%; }
+#nav_menu ul li:hover ul li:hover ul li { width: 100%; }
+#nav_menu ul li a{
+    color:white;text-decoration: none;
+}
+.slicknav_menu {
+    background-color: #2e1835 !important; 
+}
+
+.imagewithtext{
+    width:100%;
+}
+
+.audiolink{ width:40%; height: 100%;}
+.playerbox{ width:50%; margin:0px 5%}
+.btn{ 
+    width:100%; padding:2%;margin:0.2em; 
+    background-color: #c73697;color:black;
+    border-radius: 0.3em;font-size: .9em;font-style: italic;
+}
+.smallbtn{
+    width:45%;background-color: aqua;border-color:#c73697
+}
+
+
+/* Useful CSS Classes*/
+.tcenter{ text-align:center;}
+.tright{ text-align:right;}
+.tleft{ text-align:left;}
+.tjustify{ text-align:justify;}
+.imageres{ max-width: 100%;max-height: 100%;  }
+.imagediv{width:100%; margin:auto;overflow: hidden;}
+.flexh{ display: flex;}
+.mycolor{ background-color: #2e1835;color:white;}
+.mainheading{ font-size:2em; color:#eee0ea}
+.margin-5{ margin:5px; }
+.heightauto{ height:auto;}
+.profileinfo tr td,.profileinfo tr th{ padding:.90em;width:50%  }
+a.fa{ text-decoration: none;}
+/* Useful CSS Classes*/
+
+
+/*Used in Contact Page*/
+.formboxtwo{  width:50%; margin:10px 0px 0px 0px; }
+.formboxtwo:first-child{margin-right:20px}
+.formboxtwo input,.formbox input,.formboxtwo textarea,.formbox textarea{  
+    width:100%; height:30px; 
+}
+.formboxtwo input[type='radio'],.formboxtwo input[type='checkbox']{  
+    width:20px;height:15px; 
+}
+textarea.formelement{ height:80px;}
+.formbox{ width:100%; clear:both;margin:20px 0px;}
+.formboxtwo label,.formbox label{ font-size:1.3em;}
+/*Used in Contact Page*/
+.usermsg{ background-color:#063f2f;color:white; 
+    font-size:1.5em;padding:0.5em;
+    text-align: center; 
+}
+.responsivetable{
+    width:100%;
+}
+td{width:25%}
+td .imageres{ width:20%}
+.aboutteam .imagewithtext .imagediv  .responsivetable tbody tr th{ width:20%}
+
+@media only screen and (max-width: 959px) {
+    .titlebox h1{
+        font-size:2em;
+    }
+    .titlebox{
+        line-height: 2em;
+    }
+    #nav_menu { display: none; }
+    #mobile_menu { display: block; height:auto}
+    
+    #nav_menu ul li a { font-size: .875em; } 
+
+    
+    aside{
+        width:100%;height:20%; padding:5% 0px;
+    } 
+    main{
+        width:100%;  height: 80%;
+    }
+    .sidelinks{        height:100%;    } 
+    .sidelinks li{        height:20%; padding:2% 0px;    }
+    .sidelinks li a{
+        color:white; font-size:0.83em;text-decoration: none;
+    }
+    
+    .flexh{        flex-direction: column;    }
+    .musicindex{  height:auto;  }
+    .aboutimg{ width:80%}
+    .imagediv{width:50%; margin:auto;overflow: hidden;}
+    .formboxtwo{  width:100%; margin:10px 0px 0px 0px; }
+    .formboxtwo label,.formbox label{ font-size:1.2em;}
+    .usermsg{font-size: 1.2em;}
+    
+    .audiolink{ width:100%; height: 100%;}
+    .playerbox{ width:100%; margin:0%}
+    td .imageres{ width:100%}
+    audio{width:100%}
+    .aboutteam .imagediv{        width:100%;    }
+    .aboutteam .aboutimg{        width:100%;    }
+    .aboutteam th{ text-align: left;}
+}
+@media only screen and (max-width: 767px) {
+
+    
+
+    #nav_menu { display: none; }
+    #mobile_menu { display: block; }
+    .slicknav_menu {
+        background-color: #2e1835 !important; 
+    }
+}   
+   

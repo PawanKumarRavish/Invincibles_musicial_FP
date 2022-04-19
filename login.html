@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Musicial Website</title>
+    <link rel="stylesheet" href="assests/css/slicknav.min.css">
+    <link href="assests/css/mainwhite.css" rel="stylesheet"/>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assests/js/jquery.slicknav.min.js"></script>
+    <script src="assests/js/mainjs.js"></script>
+    <script src="assests/js/registerlogin.js"></script>
+</head>
+<body>
+    <header>
+        
+        <div class="logobox">
+            <img src="assests/images/musical_logo.jpg" class="logo" alt="Musicial Logo"/>
+        </div>
+        <div class="titlebox">
+            <h1>Musicial</h1>
+            <p>Place for Fun and Music</p>
+        </div>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li id="regbtn"><a href="register.html">Register</a></li>
+            <li><a href="audio.html">Audios</a></li>
+            <li><a href="aboutteam.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul> 
+    </nav>
+    <section class="musicindex flexh">
+        <aside class=""> 
+            <ul class="sidelinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mylib.html">My Library</a></li>
+                <li id="logbtn"><a href="loginhtml">Login</a></li>
+                <li><a href="artist.html">Artist</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div class="innerbox">
+                <div class="imagewithtext">
+                    <h1 class="tcenter mainheading">Login in Musicial</h1>
+                    <p id="usermsg"></p>
+                    <form action="" method="post" id="loginform">
+                        <div class="formbox"> 
+                            <label>Email*</label>
+                            <input type="email" name="email" id="email" required="required" class="formelement"/>
+                        </div>
+                        <div class="formbox"> 
+                            <label>Password*</label>
+                            <input type="password" name="password" id="password" required="required" class="formelement"/>
+                        </div>
+                        <div class="flexh">
+                            <div class="formboxtwo"> 
+                                <input type="submit" id="submit" value="Login" class="formelement mycolor"/>
+                            </div>
+                            <div class="formboxtwo"> 
+                            <input type="reset" id="clear" value="Clear" class="formelement mycolor"/>
+                            </div>
+                        </div>
+                        <div class="flexh">
+                            <div class="formboxtwo"> 
+                                Need a New Account Click on Register
+                                <a href="register.html">
+                                    <input type="button" value="Register">
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <br/>
+        <small> This Project is created by Invincibles Team  &copy; 2022</small>
+        <p>
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-youtube"></span>
+            <span class="fa fa-twitter"></span>
+        </p>
+    </footer>
+    
+    <script src="https://use.fontawesome.com/4cf57b5f14.js"></script>
+
+</body>
+</html>
